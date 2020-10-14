@@ -27,5 +27,7 @@ export default {
     });
 
     await orphanagesRepository.save(orphanage);
+
+    return res.status(201).json(orphanage);
   },
 };
